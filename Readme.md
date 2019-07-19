@@ -1,6 +1,6 @@
 usage:
 
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/speedyworldclub/tsun55R/shadowsocks-all.sh
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/speedyworldclub/tsun55R/master/shadowsocks-all.sh
 
 chmod +x shadowsocks-all.sh
 
