@@ -289,6 +289,11 @@ get_ip(){
     [ -z ${IP} ] && IP=$( wget -qO- -t1 -T2 ipv4.icanhazip.com )
     [ -z ${IP} ] && IP=$( wget -qO- -t1 -T2 ipinfo.io/ip )
     echo ${IP}
+    echo ""
+    echo "檢測到的本機的IP是： ${IP}"
+    echo ""
+    echo "請輸入正確域名："
+    read IP
 }
 
 get_ipv6(){
