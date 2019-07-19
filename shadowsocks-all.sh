@@ -1079,6 +1079,7 @@ qr_generate_python(){
         echo
         echo "Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)"
         echo -e "${green} ${qr_code} ${plain}"
+        echo -n "${qr_code}" |qrencode -o - -t UTF8
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_python_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_python_qr.png ${plain}"
