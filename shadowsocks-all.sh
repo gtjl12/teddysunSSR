@@ -1094,6 +1094,7 @@ qr_generate_r(){
         echo
         echo "Your QR Code: (For ShadowsocksR Windows, Android clients only)"
         echo -e "${green} ${qr_code} ${plain}"
+        echo -n "${qr_code}" |qrencode -o - -t UTF8
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_r_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_r_qr.png ${plain}"
@@ -1107,6 +1108,7 @@ qr_generate_go(){
         echo
         echo "Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)"
         echo -e "${green} ${qr_code} ${plain}"
+        echo -n "${qr_code}" |qrencode -o - -t UTF8
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_go_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_go_qr.png ${plain}"
@@ -1120,6 +1122,7 @@ qr_generate_libev(){
         echo
         echo "Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)"
         echo -e "${green} ${qr_code} ${plain}"
+        echo -n "${qr_code}" |qrencode -o - -t UTF8
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_libev_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_libev_qr.png ${plain}"
